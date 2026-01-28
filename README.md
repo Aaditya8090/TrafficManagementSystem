@@ -1,38 +1,44 @@
 # Traffic Management System
 
 ## Overview
-The Traffic Management System is designed to optimize traffic flow at road intersections by analyzing vehicle density and dynamically adjusting traffic signal timings. The system aims to reduce congestion and minimize vehicle waiting time.
+The Traffic Management System is a web-based application designed to optimize traffic flow by analyzing vehicle density and dynamically managing traffic signals. The goal is to reduce congestion and improve traffic efficiency.
 
 ## Features
-- Vehicle density analysis for each lane
-- Dynamic traffic signal timing
-- Traffic flow optimization using algorithms
-- Simulation of different traffic scenarios
+- Real-time traffic density analysis
+- Dynamic traffic signal control
+- Optimized traffic flow using algorithms
+- Interactive user interface
 
 ## Tech Stack
-- Programming Language: C++ / Python
-- Concepts Used: Data Structures, Algorithms
+- Frontend: React.js, Tailwind CSS
+- Backend: Node.js, Express.js
+- Database: MongoDB
+- Media Storage: ImageKit
 
 ## Project Structure
-Traffic-Management-System/
-├── src/
-│ ├── main.cpp / main.py
-│ ├── traffic_control.*
-│ └── utils.*
-├── input/
-│ └── traffic_data.txt
-├── output/
-│ └── signal_timing.txt
-└── README.md
-
+    Traffic-Management-System/
+    ├── client/
+    │   ├── src/
+    │   │   ├── components/
+    │   │   ├── pages/
+    │   │   └── App.jsx
+    │   └── package.json
+    ├── server/
+    │   ├── controllers/
+    │   ├── routes/
+    │   ├── models/
+    │   └── server.js
+    ├── config/
+    ├── .env
+    └── README.md
 
 ## How It Works
-1. Traffic data is taken as input or simulated.
-2. Vehicle density is calculated for each direction.
-3. Traffic signal timing is adjusted based on congestion.
-4. Optimized signal control improves traffic flow.
+1. Traffic data is collected or simulated through the frontend.
+2. Backend APIs process traffic density data.
+3. Algorithms decide optimal signal timings.
+4. Updated traffic signals improve traffic flow.
 
 ## Future Improvements
 - Integration with real-time traffic sensors
-- Machine learning-based traffic prediction
-- Live traffic monitoring dashboard
+- AI-based traffic prediction
+- Admin analytics dashboard
